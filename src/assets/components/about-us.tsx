@@ -1,10 +1,10 @@
 import { Link,useNavigate  } from "react-router-dom";
-import logo from "./Group 1000001874.png";
+import logo from "/Group 1000001874.png";
 import "./about-us.css";
-import ellipse from "./Frame 92.png";
-import man1 from "./Frame 1000003760.png";
-import man2 from "./Frame 1000003761.png";
-import man3 from "./image 1230.png";
+import ellipse from "/Frame 92.png";
+import man1 from "/Frame 1000003760.png";
+import man2 from "/Frame 1000003761.png";
+import man3 from "/image 1230.png";
 import Button from "react-bootstrap/Button";
 import React, { useState } from "react";
 import { Card } from "react-bootstrap";
@@ -148,7 +148,7 @@ const AboutUs: React.FC = () => {
       <div className="container my-5 mission-values-vision">
         <h2 className="section-heading text-center">What really we are</h2>
         <div className="row justify-content-center">
-          {/* Mission Card */}
+        
           <div
             className={`col-md-4 box ${activeBox === 0 ? "active" : ""}`}
             onClick={() => handleBoxClick(0)}
@@ -177,7 +177,7 @@ const AboutUs: React.FC = () => {
             </div>
           </div>
 
-          {/* Values Card */}
+          
           <div
             className={`col-md-4 box ${activeBox === 1 ? "active" : ""}`}
             onClick={() => handleBoxClick(1)}
@@ -203,7 +203,7 @@ const AboutUs: React.FC = () => {
             </div>
           </div>
 
-          {/* Vision Card */}
+          
           <div
             className={`col-md-4 box ${activeBox === 2 ? "active" : ""}`}
             onClick={() => handleBoxClick(2)}
@@ -246,9 +246,9 @@ const AboutUs: React.FC = () => {
                   <img src={man3} alt="Dennis Albo" className="team-img" />
                 </div>
                 <div className="card-body-content">
-                  <h5 className="card-title">Dennis Albo</h5>
-                  <p className="card-text">CEO & Founder</p>
-                  <div className="social-icons">
+                  <h5 className="title_text">Dennis Albo</h5>
+                  <p className="title_sub_header">CEO & Founder</p>
+                   <div className="social-icons">
                     <i className="fab fa-facebook-f"></i>
                     <i className="fab fa-linkedin"></i>
                     <i className="fab fa-twitter"></i>
@@ -262,8 +262,8 @@ const AboutUs: React.FC = () => {
                   <img src={man1} alt="Steave Harden" className="team-img" />
                 </div>
                 <div className="card-body-content">
-                  <h5 className="card-title">Steave Harden</h5>
-                  <p className="card-text">Doctor Manager</p>
+                  <h5 className="title_text">Steave Harden</h5>
+                  <p className="title_sub_header">Doctor Manager</p>
                   <div className="social-icons">
                     <i className="fab fa-facebook-f"></i>
                     <i className="fab fa-linkedin"></i>
@@ -278,8 +278,8 @@ const AboutUs: React.FC = () => {
                   <img src={man2} alt="Mark Barren" className="team-img" />
                 </div>
                 <div className="card-body-content">
-                  <h5 className="card-title">Mark Barren</h5>
-                  <p className="card-text">HR Director</p>
+                  <h5 className="title_text">Mark Barren</h5>
+                  <p className="">HR Director</p>
                   <div className="social-icons">
                     <i className="fab fa-facebook-f"></i>
                     <i className="fab fa-linkedin"></i>
@@ -292,95 +292,94 @@ const AboutUs: React.FC = () => {
         </div>
       </section>
       <footer className="footer bg-primary text-white">
-        <div className="container py-4">
-          <div className="row">
-            <div className="col-md-4 mb-4 mb-md-0 tiba-health-column">
-              <h4 className="footer-heading">TibaHealth</h4>
-              <p>
-                Eagerly want to join our community and get daily updates about
-                what we do in our daily lives? Just connect with us.
-              </p>
-              <div className="input-group subscribe-group">
-                <input
-                  type="email"
-                  className="form-control subscribe-input"
-                  placeholder="Enter your email"
-                />
-                <button className="btn btn-light subscribe-btn1" type="button">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-
-            <div className="col-md-4 mb-4 mb-md-0 quick-links-column">
-              <h4 className="footer-heading">Quick Links</h4>
-              <ul className="list-unstyled">
-                <li>
-                  <a href="#" className="text-white">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    Packages
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    About us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    Contact us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    Services
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col-md-4 mb-4  mb-md-0 Connect-with-us-column">
-              <div>
-                <h4 className="footer-heading">Connect with us</h4>
-
-                <ul className="list-unstyled social-links">
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="row pt-3">
-            <div className="col-12 text-center">
-              <hr className="footer-divider" />
-              <p className="mb-0">&copy; 2024 TibaHealth</p>
-            </div>
-          </div>
+  <div className="container py-4">
+    <div className="row">
+      <div className="col-md-4 mb-4 mb-md-0 tiba-health-column">
+        <h4 className="footer-heading">TibaHealth</h4>
+        <p>
+          Eagerly want to join our community and get daily updates about
+          what we do in our daily lives? Just connect with us.
+        </p>
+        <div className="input-group subscribe-group d-flex">
+          <input
+            type="email"
+            className="form-control subscribe-input"
+            placeholder="Enter your email"
+          />
+          <button className="btn btn-light subscribe-btn w-100" type="button">
+            <span className="text-muted">Subscribe</span>
+          </button>
         </div>
-      </footer>
+      </div>
+
+      <div className="col-md-4 mb-4 mb-md-0 quick-links-column">
+        <h4 className="footer-heading">Quick Links</h4>
+        <ul className="list-unstyled">
+          <li>
+            <a href="#" className="text-white">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Packages
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              About us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Services
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="col-md-4 mb-4  mb-md-0 Connect-with-us-column">
+        <div>
+          <h4 className="footer-heading">Connect with us</h4>
+          <ul className="list-unstyled social-links">
+            <li>
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div className="row pt-3">
+      <div className="col-12 text-center">
+        <hr className="footer-divider" />
+        <p className="mb-0">&copy; 2024 TibaHealth</p>
+      </div>
+    </div>
+  </div>
+</footer>
     </>
   );
 };

@@ -1,8 +1,8 @@
 import React from "react";
 import { Form, Button, Col, Row, Image } from "react-bootstrap";
 import "./Register.css"; 
-import doctor5 from "./doctor-removebg-preview 7.png";
-import small from "./Group 1000001896.png";
+import doctor5 from "/doctor-removebg-preview 7.png";
+import small from "/Group 1000001896.png";
 import { useNavigate } from "react-router-dom";
 
 const CreateAccount: React.FC = () => {

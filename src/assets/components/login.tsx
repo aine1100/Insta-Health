@@ -1,31 +1,32 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons'; 
+import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import './login.css';
 
-function TibaHealth() {
+const TibaHealth: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-
-  //const handleSubmit = (e) => {
-    //e.preventDefault();
-    //alert(`Email:${email}, Password: ${password}`);
-  //};
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);
   };
+  const handleLogin = () => {
+    navigate('/DashboardOverview'); 
+  };
 
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
-      <div className="card" style={{ maxWidth: '400px', width: '100%' }}>
+      <div className="card shadow" style={{ maxWidth: '400px', width: '100%', borderRadius: '10px' }}>
         <div className="card-body">
-          <h1 className="text-center mb-4">Welcome to Tiba Health</h1>
+          <h2 className="text-center mb-4" style={{ color: '#007bff' }}>Welcome to Tiba Health</h2>
+          <h4 className="text-center mb-3" style={{ color: '#007bff' }}>Log into your account</h4>
           <form>
             <div className="form-group">
-              <label htmlFor="email">Email address or Phone number</label>
+              <label htmlFor="email" className="form-label">Email address or Phone number</label>
               <input
                 type="text"
                 className="form-control"
@@ -36,29 +37,28 @@ function TibaHealth() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <div className="input-group">
-                <input
-                  type={showPassword ? 'text' : 'password'} 
-                  className="form-control"
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                />
-                <div className="input-group-append">
-                  <button
-                    className="btn btn-outline-secondary"
-                    type="button"
-                    onClick={togglePasswordVisibility} 
-                  >
-                    {showPassword ? 'Hide' : 'Show'}
-                  </button>
-                </div>
-              </div>
-            </div>
-            <button type="submit" className="btn btn-primary btn-block">
-              Log in
+  <label htmlFor="password" className="form-label">Password</label>
+  <div className="input-group">
+    <input
+      type={showPassword ? 'text' : 'password'}
+      className="form-control"
+      id="password"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+      required
+    />
+    <button
+      className="btn btn-outline-secondary input-group-text"
+      type="button"
+      onClick={togglePasswordVisibility}
+    >
+      {showPassword ? 'Hide' : 'Show'}
+    </button>
+  </div>
+</div>
+
+            <button  className="btn btn-primary btn-block mt-4" style={{ borderRadius: '20px' }} onClick={handleLogin}>
+              Login
             </button>
           </form>
           <div className="text-center mt-3">
@@ -66,11 +66,18 @@ function TibaHealth() {
               Forgot your password?
             </a>
           </div>
-          <div className="d-flex justify-content-center mt-3">
-            <button className="btn btn-outline-primary mr-2">
+          <div className="text-center mt-3">Or</div>
+          <div className="d-flex justify-content-center mt-3" style={{ gap: '16px' }}>
+            <button
+              className="btn btn-outline-primary"
+              style={{ borderRadius: '20px', width: '48%' }}
+            >
               <FontAwesomeIcon icon={faFacebookF} /> Facebook
             </button>
-            <button className="btn btn-outline-primary">
+            <button
+              className="btn btn-outline-primary"
+              style={{ borderRadius: '20px', width: '48%' }}
+            >
               <FontAwesomeIcon icon={faGoogle} /> Google
             </button>
           </div>
@@ -78,6 +85,6 @@ function TibaHealth() {
       </div>
     </div>
   );
-}
+};
 
 export default TibaHealth;

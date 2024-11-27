@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../components/Group 1000001874.png";
+import logo from "/Group 1000001874.png";
 import { Container, Row, Col, Table, Button } from "react-bootstrap";
 import "../components/Cart.css";
 
@@ -157,39 +157,95 @@ const Cart: React.FC<CartProps> = ({ cartItems, handleRemoveFromCart }) => {
 
 
       
-      <footer className="footer bg-primary text-white">
-        <div className="container py-4">
-          <div className="row">
-            <div className="col-md-4 mb-4 mb-md-0">
-              <h4 className="footer-heading">Insta Health</h4>
-              <p>Stay updated with our latest products and offers!</p>
-            </div>
-            <div className="col-md-4 mb-4 mb-md-0">
-              <h4 className="footer-heading">Quick Links</h4>
-              <ul className="list-unstyled">
-                <li>
-                  <Link to="/" className="text-white">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about-us" className="text-white">About Us</Link>
-                </li>
-                <li>
-                  <Link to="/contact-us" className="text-white">Contact Us</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-md-4 mb-4 mb-md-0">
-              <h4 className="footer-heading">Connect with us</h4>
-              <ul className="list-unstyled social-links">
-                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-              </ul>
-            </div>
-          </div>
+    <footer className="footer bg-primary text-white">
+  <div className="container py-4">
+    <div className="row">
+      <div className="col-md-4 mb-4 mb-md-0 tiba-health-column">
+        <h4 className="footer-heading">TibaHealth</h4>
+        <p>
+          Eagerly want to join our community and get daily updates about
+          what we do in our daily lives? Just connect with us.
+        </p>
+        <div className="input-group subscribe-group d-flex">
+          <input
+            type="email"
+            className="form-control subscribe-input"
+            placeholder="Enter your email"
+          />
+          <button className="btn btn-light subscribe-btn w-100" type="button">
+            <span className="text-muted">Subscribe</span>
+          </button>
         </div>
-      </footer>
+      </div>
+
+      <div className="col-md-4 mb-4 mb-md-0 quick-links-column">
+        <h4 className="footer-heading">Quick Links</h4>
+        <ul className="list-unstyled">
+          <li>
+            <a href="#" className="text-white">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Packages
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              About us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Services
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="col-md-4 mb-4  mb-md-0 Connect-with-us-column">
+        <div>
+          <h4 className="footer-heading">Connect with us</h4>
+          <ul className="list-unstyled social-links">
+            <li>
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div className="row pt-3">
+      <div className="col-12 text-center">
+        <hr className="footer-divider" />
+        <p className="mb-0">&copy; 2024 TibaHealth</p>
+      </div>
+    </div>
+  </div>
+</footer>
     </>
   );
 };

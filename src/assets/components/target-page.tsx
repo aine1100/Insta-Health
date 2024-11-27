@@ -1,8 +1,8 @@
 import React from "react";
 import { Form, Button, Col, Row, Image } from "react-bootstrap";
 import "./target-page.css";  // For custom styles
-import log from "./Group 1000001896.png";
-import doctor7 from "./doctor-removebg-preview 7.png";
+import log from "/Group 1000001896.png";
+import doctor7 from "/doctor-removebg-preview 7.png";
 
 const TargetPage: React.FC = () => {
   return (

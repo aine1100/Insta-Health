@@ -5,14 +5,14 @@ const PatientRegistration: React.FC = () => {
   return (
     <div className="registration-container">
       <div className="welcome-section">
-        <img src="logo.png" alt="Logo" className="logo" /> {/* Replace with your logo path */}
+        <img src="logo.png" alt="Logo" className="logo" /> 
         <h2>Welcome to Insta Health Patient</h2>
         <p>
           Hello patients, welcome to Tiba Health where you will get access to different doctors
           and medicine at a low price.
         </p>
         <img src="doctor_patient.png" alt="Doctor and Patient" className="illustration" />
-        {/* Replace with your image path */}
+        
       </div>
 
       <div className="form-section">

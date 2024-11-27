@@ -5,28 +5,38 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
-
-a {
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: Arila, sans-serif;
+  padding: 5px 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.a {
   text-decoration: none;
   color: inherit;
 }
 
 .container7 {
   padding: 1px;
-  max-width: 1200px;
+  max-width: 90px;
   margin: 0 auto;
+  height: 20px;
+  align-items: center;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #ffffff;
   padding: 10px 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.1);
 }
 
-nav .logo4 {
+.nav .logo4 {
   width: 30px;
   height: auto;
 }
@@ -35,9 +45,9 @@ nav .logo4 {
   font-weight: bold;
   color: #1e90ff;
   font-size: 1.8rem;
-  display:flex;
-  align-items:center;
-  margin-left:8px;
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
 }
 
 nav ul {
@@ -48,6 +58,8 @@ nav ul {
 
 nav ul li {
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 180px;
 }
 
 nav ul li a:hover {
@@ -56,12 +68,12 @@ nav ul li a:hover {
 
 .auth-buttons button {
   margin-left: 10px;
-  padding: 8px 15px;
+  padding: 2px 9px;
   border: none;
   background-color: #1e90ff;
   color: white;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .auth-buttons button:hover {
@@ -121,31 +133,30 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-
 .hero .btn-primary {
-  background-color: #1e90ff; /* Light blue background */
-  color: white; /* White text */
-  border: 2px solid #1e90ff; /* Blue border */
+  background-color: #1e90ff; 
+  color: white; 
+  border: 2px solid #1e90ff; 
   transition: background-color 0.3s ease, border-color 0.3s ease;
-  padding: 10px 20px; /* Adjusted padding for better appearance */
-  border-radius: 4px; /* Rounded corners for a sleek look */
+  padding: 10px 20px; 
+  border-radius: 4px; 
 }
 
 .hero .btn-outline3-primary {
-  background-color: transparent; /* Transparent background */
-  color: #1e90ff; /* Blue text */
-  border: 2px solid #1e90ff; /* Blue border */
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  padding: 10px 20px; /* Adjusted padding for consistency */
-  border-radius: 4px; /* Rounded corners */
+  background-color: transparent; 
+  color: #1e90ff; 
+  border: 2px solid #1e90ff; 
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  padding: 10px 20px; 
+  border-radius: 4px; 
 }
 
 .hero .btn-primary:hover {
-  background-color: #0078e7; /* Darker blue on hover */
+  background-color: #0078e7;
   color: white;
   border-color: #0078e7;
 }
-
 
 .hero .image-content img {
   max-width: 100%;
@@ -156,22 +167,36 @@ nav ul li a:hover {
   box-shadow: 0 4px 20px rgba(30, 144, 255, 0.5);
 }
 
+.containers {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin:0 auto;
+  justify-content:center;
+  align-items:center;
+}
+
 .features-section {
-  padding: 50px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
+  gap: 50px;
+  
 }
 
 .features-section h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 40px;
   color: #1e90ff;
 }
 
 .features-section .card {
   background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
 }
 
 .features-section .card:hover {
@@ -185,8 +210,8 @@ nav ul li a:hover {
 }
 
 .features-section .circular-image {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   margin: 0 auto;
   display: block;
@@ -194,7 +219,7 @@ nav ul li a:hover {
 }
 
 .features-section .feature-icon {
-  width: 50px;
+  width: 60px;
   height: auto;
 }
 
@@ -295,6 +320,8 @@ nav ul li a:hover {
   max-width: 100%;
 }
 .container {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1100px;
 }
 
@@ -396,9 +423,6 @@ nav ul li a:hover {
   margin-right: 15px;
 }
 
-.social-icon:hover {
-  color: #0056b3;
-}
 .footer {
   background-color: #008cba;
   color: #fff;
@@ -409,24 +433,47 @@ nav ul li a:hover {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.footer-heading p { 
-color:#fff;
+
+.footer-heading p {
+  color: #fff;
 }
 
 .subscribe-group {
   max-width: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex; 
+  align-items: center; 
 }
 
 .subscribe-input {
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  flex-grow: 1; 
+  height: 40px; 
 }
 
 .subscribe-btn {
   background-color: #008cba;
   color: #fff;
-  border-radius: 8;
+  border-radius: 16px;
+  border: none;
+  padding: 10px 15px; 
+  font-size: 14px;
+  height: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-btn:hover {
+  color: #fff;
+}
+
+.subscribe-btn span {
+  color: grey; 
+  font-size:medium;
 }
 
 .footer-divider {
@@ -444,11 +491,6 @@ color:#fff;
 
 .social-links a {
   color: #fff;
-  font-size: 25px;
-  transition: color 0.3s;
-}
-.media-links a {
-  color: #008cba;
   font-size: 25px;
   transition: color 0.3s;
 }

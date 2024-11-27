@@ -2,8 +2,8 @@ import React from 'react';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import './servicessection.css';
 import { Link } from "react-router-dom";
-import logo from "./Group 1000001874.png";
-import doctor3 from "./Frame 1000003763.png";
+import logo from "/Group 1000001874.png";
+import doctor3 from "/Frame 1000003763.png";
 
 const ServicesSection: React.FC = () => {
   const services = [
@@ -118,95 +118,94 @@ const ServicesSection: React.FC = () => {
       </Container>
     </section>
     <footer className="footer bg-primary text-white">
-        <div className="container py-4">
-          <div className="row">
-            <div className="col-md-4 mb-4 mb-md-0 tiba-health-column">
-              <h4 className="footer-heading">TibaHealth</h4>
-              <p>
-                Eagerly want to join our community and get daily updates about
-                what we do in our daily lives? Just connect with us.
-              </p>
-              <div className="input-group subscribe-group">
-                <input
-                  type="email"
-                  className="form-control subscribe-input"
-                  placeholder="Enter your email"
-                />
-                <button className="btn btn-light subscribe-btn" type="button">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-
-            <div className="col-md-4 mb-4 mb-md-0 quick-links-column">
-              <h4 className="footer-heading">Quick Links</h4>
-              <ul className="list-unstyled">
-                <li>
-                  <a href="#" className="text-white">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    Packages
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    About us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    Contact us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-white">
-                    Services
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col-md-4 mb-4  mb-md-0 Connect-with-us-column">
-              <div>
-                <h4 className="footer-heading">Connect with us</h4>
-
-                <ul className="list-unstyled social-links">
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="row pt-3">
-            <div className="col-12 text-center">
-              <hr className="footer-divider" />
-              <p className="mb-0">&copy; 2024 TibaHealth</p>
-            </div>
-          </div>
+  <div className="container py-4">
+    <div className="row">
+      <div className="col-md-4 mb-4 mb-md-0 tiba-health-column">
+        <h4 className="footer-heading">TibaHealth</h4>
+        <p>
+          Eagerly want to join our community and get daily updates about
+          what we do in our daily lives? Just connect with us.
+        </p>
+        <div className="input-group subscribe-group d-flex">
+          <input
+            type="email"
+            className="form-control subscribe-input"
+            placeholder="Enter your email"
+          />
+          <button className="btn btn-light subscribe-btn w-100" type="button">
+            <span className="text-muted">Subscribe</span>
+          </button>
         </div>
-      </footer>
+      </div>
+
+      <div className="col-md-4 mb-4 mb-md-0 quick-links-column">
+        <h4 className="footer-heading">Quick Links</h4>
+        <ul className="list-unstyled">
+          <li>
+            <a href="#" className="text-white">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Packages
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              About us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Services
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="col-md-4 mb-4  mb-md-0 Connect-with-us-column">
+        <div>
+          <h4 className="footer-heading">Connect with us</h4>
+          <ul className="list-unstyled social-links">
+            <li>
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div className="row pt-3">
+      <div className="col-12 text-center">
+        <hr className="footer-divider" />
+        <p className="mb-0">&copy; 2024 TibaHealth</p>
+      </div>
+    </div>
+  </div>
+</footer>
     </>
   );
 };

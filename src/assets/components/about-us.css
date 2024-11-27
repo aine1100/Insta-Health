@@ -59,32 +59,39 @@
   align-items: stretch;
 }
 
+
+
 .card3 {
   border-radius: 10px;
   margin-bottom: 20px;
   cursor: pointer;
-  transition:background-color 0.3 ease,  color 0.3s;
+  transition: background-color 0.3 ease, color 0.3s;
   flex: 1;
   min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-
 }
-.card3 h4,.card4 p, .card3 ul li {
-  color:blue;
-  transition:color 0.3s ease;
+.card3 h4,
+.card4 p,
+.card3 ul li {
+  color: blue;
+  transition: color 0.3s ease;
 }
 .card3:hover {
-  background-color:#007b9e;
+  background-color: #007b9e;
 }
 .card3:hover h4,
 .card3:hover p,
 .card3:hover ul li {
-  color:white;
+  color: white;
 }
 
+
+.title_text {
+  color: #007b9e;
+}
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -151,26 +158,45 @@
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
-  height: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: white;
-  padding: 15px;
-  margin-bottom:60px;
+  padding: 20px;
+  margin-bottom: 60px;
 }
 
 .team-card:hover {
   transform: translateY(-10px);
-  background-color: white;
-}
-.team-section h2 {
-  font-size: 35px;
-  font-weight:bold;
+  background-color: #f9f9f9; /* Subtle hover effect */
 }
 
 .image-wrapper {
   flex: 1 1 50%;
-  background-color: #f0f0f0;
+  padding: 0; /* Remove extra padding */
+  border-radius: 0; /* Remove rounded edges */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.team-img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fills the space without distortion */
+  border-radius: 4px; /* Slight rounded corners for a clean look */
+  box-shadow: none; /* Remove any shadow around the image */
+}
+
+.team-section h2 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+
+.image-wrapper {
+  flex: 1 1 50%;
   padding: 15px;
   border-radius: 8px;
   display: flex;
@@ -219,9 +245,10 @@
   color: #007bff;
 }
 
-.card-text {
+.title_sub_header {
   color: gray;
 }
+
 .footer {
   background-color: #008cba;
   color: #fff;
@@ -232,7 +259,6 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 
 .subscribe-group {
   max-width: 320px;
@@ -249,7 +275,7 @@
   background-color: #008cba;
   color: #fff;
   border-radius: 10;
-  height:130%;
+  height: 130%;
 }
 
 .footer-divider {
@@ -290,7 +316,7 @@
   margin-right: 70px;
 }
 .tiba-health-column p {
-  color:white;
+  color: white;
 }
 
 .quick-links-column {

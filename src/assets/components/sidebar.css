@@ -1,0 +1,95 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1e90ff; /* Updated lighter blue */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  /* Removed border-bottom for a clean design */
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  border-radius: 4px;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  background-color: #1a76d2; /* Slightly darker blue for hover */
+  transform: scale(1.05); /* Slight hover scale effect */
+}
+
+.sidebar-nav li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav i {
+  font-size: 1.2rem; /* Icon size */
+}
+
+.logout {
+  margin-top: auto;
+  padding: 15px 20px;
+}
+
+.logout a {
+  color: #ff4d4f; /* Red for logout button */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logout a:hover {
+  background-color: #e84118;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar-header {
+    font-size: 1.4rem;
+  }
+
+  .sidebar-nav a {
+    font-size: 0.9rem;
+  }
+
+  .sidebar-nav i {
+    font-size: 1rem;
+  }
+}

@@ -44,7 +44,7 @@
   }
   
   
-  .btn-outline-primary {
+  .btn-outline9-primary {
     color: #007BFF;
     border-color: #007BFF;
   }
@@ -54,11 +54,8 @@
     border-color: #007BFF;
   }
   
-  .btn-outline-primary:hover,
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-  }
+
+  
   .my-5{
     font-size:25px;
     color:#007BFF;
@@ -134,10 +131,6 @@
     border-color: #0056b3;
   }
   
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-  }
   
   .w-100 {
     width: 50%;
