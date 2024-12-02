@@ -8,19 +8,15 @@ import logo from '/Group 1000001874.png';
 const Sidebar: React.FC = () => {
   const handleLogout = () => {
     console.log('Logging out...');
-
   };
 
   return (
     <div className="sidebar">
-      
       <div className="sidebar-header">
         <img src={logo} alt="InstaHealth Logo" className="logo" />
         <h2 className="brand-name">InstaHealth</h2>
       </div>
-
-      
-      <ul className="nav">
+      <ul className="sidebar-nav">
         <li className="nav-item">
           <NavLink
             to="/"
@@ -56,13 +52,13 @@ const Sidebar: React.FC = () => {
         </li>
         <li className="nav-item">
           <NavLink
-            to="/consultations"
+            to="/Consultationlayout"
             className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
           >
             <FontAwesomeIcon icon={faUserMd} /> Consultations
           </NavLink>
         </li>
-        <li className="nav-item text-danger">
+        <li className="nav-item logout">
           <button className="nav-link" onClick={handleLogout}>
             <FontAwesomeIcon icon={faSignOutAlt} /> Log out
           </button>

@@ -25,7 +25,10 @@ import PatientSummaryCard from "./assets/components/PatientSummaryCard";
 import Appointmentlist from "./assets/components/appointmentlist";
 import Appointmentcard from "./assets/components/apppointmentCard";
 import UserProfile from "./assets/components/userprofile";
-
+import MessageList from './assets/components/messageList';
+import MessageInput from './assets/components/MessageInput';
+import Messages from './assets/components/messages';
+import ConsultationLayout from "./assets/components/Consultationlayout";
 const App: React.FC = () => {
   interface Product {
     id: number;
@@ -45,6 +48,9 @@ const App: React.FC = () => {
   const handleRemoveFromCart = (id: number) => {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
   };
+  
+
+  
 
   return (
     <>
@@ -101,6 +107,8 @@ const App: React.FC = () => {
            
           </Route>
           <Route path="/userprofile" element={<UserProfile />} ></Route>
+           <Route path="/messages" element={<Messages />} />
+           <Route path="/Consultationlayout" element={<ConsultationLayout />} />
         </Routes>
       </Router>
     </>
