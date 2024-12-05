@@ -7,7 +7,7 @@ export default function Hero() {
             
         },
         {
-            name:"Download our mobile app",path:"",style: " text-[#0086AD] hover:text-white p-2 "
+            name:"Download our mobile app",path:"",style: " text-[#0086AD] p-2 "
         }
     ]
     return (

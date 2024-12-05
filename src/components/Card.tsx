@@ -1,10 +1,10 @@
 interface CardProps{
-    image:string,
-    title:string,
-    description:string,
-    classname:string,
-    titlestyle:string,
-    pstyle:string
+    image?:string,
+    title?:string,
+    description?:string,
+    classname?:string,
+    titlestyle?:string,
+    pstyle?:string
 }
 
 export default function Card({image, title, description,classname,titlestyle,pstyle}:CardProps){

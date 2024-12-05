@@ -13,7 +13,7 @@ export default function Features(){
             image:"/book.png",
             title:"Appointment Booking",
             description:"Join our live video call sessions with our expert doctors.",
-            className:"bg-[#0086AD] text-white rounded-xl   bg-white h-[380px]",
+            className:"bg-[#0086AD] text-white rounded-xl   text-white h-[380px]",
             p:"text-white",
             titlestyle:"text-white"
         },
