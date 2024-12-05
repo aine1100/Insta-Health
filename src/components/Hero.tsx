@@ -34,7 +34,7 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-col items-end">
                 <img src="/landing.png" alt="" className="w-[800px]" />
-                <WhatsappBot/>
+                <WhatsappBot style="ml-[600px] -mt-[150px]"/>
                 </div>
 
             </div>

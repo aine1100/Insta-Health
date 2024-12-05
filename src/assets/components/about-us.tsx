@@ -1,10 +1,10 @@
 import { Link,useNavigate  } from "react-router-dom";
-import logo from "/Group 1000001874.png";
+import logo from "/people.png";
 import "./about-us.css";
-import ellipse from "/Frame 92.png";
-import man1 from "/Frame 1000003760.png";
-import man2 from "/Frame 1000003761.png";
-import man3 from "/image 1230.png";
+import ellipse from "/people.png";
+import man1 from "/people.png";
+import man2 from "/people.png";
+import man3 from "/people.png";
 import Button from "react-bootstrap/Button";
 import React, { useState } from "react";
 import { Card } from "react-bootstrap";
@@ -28,7 +28,7 @@ const AboutUs: React.FC = () => {
     {
       name: "Dennis Albo",
       role: "Ceo & Founder",
-      image: "/path-to-image/dennis.jpg",
+      image: "/people.png",
       socials: {
         facebook: "https://facebook.com",
         linkedin: "https://linkedin.com",
@@ -38,7 +38,7 @@ const AboutUs: React.FC = () => {
     {
       name: "Steave Harden",
       role: "Doctor Manager",
-      image: "/path-to-image/steave.jpg",
+      image: "/people.png",
       socials: {
         facebook: "https://facebook.com",
         linkedin: "https://linkedin.com",
@@ -48,7 +48,7 @@ const AboutUs: React.FC = () => {
     {
       name: "Mark Barren",
       role: "HR Director",
-      image: "/path-to-image/mark.jpg",
+      image: "/people.png",
       socials: {
         facebook: "https://facebook.com",
         linkedin: "https://linkedin.com",
