@@ -2,6 +2,8 @@
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Navbar from "./assets/components/Navbar";
 import AboutUs from "./assets/components/about-us";
+import ContactPage from "./pages/Contant";
+import Market from "./pages/Market";
 // import Services from "./assets/components/services";
 // import Packages from "./assets/components/packages";
 // import ContactUs from "./assets/components/contact-us";
@@ -119,7 +121,7 @@ import AboutUs from "./assets/components/about-us";
 // import Home from "./pages/home"
 // import About from "./pages/about"
 // import Service from "./pages/service"
-import Packages from "./pages/package"
+// import Packages from "./pages/package"
 export default function App(){
   return(
     <>
@@ -127,7 +129,9 @@ export default function App(){
     {/* <About/> */}
     {/* <AboutUs/> */}
     {/* <Service/> */}
-    <Packages/>
+    {/* <Packages/> */}
+    {/* <ContactPage/> */}
+    <Market/>
 
     </>
   )
