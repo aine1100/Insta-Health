@@ -122,6 +122,9 @@ import Market from "./pages/Market";
 // import About from "./pages/about"
 // import Service from "./pages/service"
 // import Packages from "./pages/package"
+import Cart from "./pages/Cart"
+import PaymentPage from "./pages/Payment";
+import SingleProductPage from "./pages/SingleProduct";
 export default function App(){
   return(
     <>
@@ -131,7 +134,10 @@ export default function App(){
     {/* <Service/> */}
     {/* <Packages/> */}
     {/* <ContactPage/> */}
-    <Market/>
+    {/* <Market/> */}
+    {/* <Cart/> */}
+    {/* <PaymentPage/> */}
+    {/* <SingleProductPage/> */}
 
     </>
   )
