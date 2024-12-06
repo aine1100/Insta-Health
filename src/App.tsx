@@ -123,8 +123,10 @@ import Market from "./pages/Market";
 // import Service from "./pages/service"
 // import Packages from "./pages/package"
 import Cart from "./pages/Cart"
-import PaymentPage from "./pages/Payment";
-import SingleProductPage from "./pages/SingleProduct";
+import Payment from "./pages/Payment";
+import ProductCard from "./pages/SingleProduct";
+// import PaymentPage from "./pages/Payment";
+// import SingleProductPage from "./pages/SingleProduct";
 export default function App(){
   return(
     <>
@@ -138,6 +140,8 @@ export default function App(){
     {/* <Cart/> */}
     {/* <PaymentPage/> */}
     {/* <SingleProductPage/> */}
+    {/* <Payment/> */}
+    <ProductCard/>
 
     </>
   )
