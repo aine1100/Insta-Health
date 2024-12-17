@@ -15,17 +15,17 @@ const Navbar: React.FC = () => {
     }, []);
 
     const tabs = [
-        { name: "Home", path: "#" },
-        { name: "About Us", path: "#about" },
-        { name: "Services", path: "#services" },
-        { name: "Packages", path: "#doctors" },
-        { name: "Contact Us", path: "#contact" },
-        { name: "Market Place", path: "#contact" },
+        { name: "Home", path: "/" },
+        { name: "About Us", path: "/about" },
+        { name: "Services", path: "/our-doctors/departments" },
+        { name: "Packages", path: "/package" },
+        { name: "Contact Us", path: "/help/customer" },
+        { name: "Market Place", path: "/market" },
     ];
 
     const locationButton = [
-        { name: "Login", path: "#login", style: "bg-white text-[#0086AD] border-[#0086AD] border-[1.5px]" },
-        { name: "Sign up", path: "#signup", style: "bg-[#0086AD] text-white" },
+        { name: "Login", path: "/auth/patient/login", style: "bg-white text-[#0086AD] border-[#0086AD] border-[1.5px]" },
+        { name: "Sign up", path: "/auth/patient/signup", style: "bg-[#0086AD] text-white" },
     ];
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
