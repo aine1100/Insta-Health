@@ -14,9 +14,10 @@ import AppointmentsPage from "./pages/Patients/AppointmentsPage";
 import DoctorList from "./pages/Patients/Doctor-list";
 import PaymentsPage from "./pages/Patients/PaymentsPage";
 import SignUp from "./pages/Patients/SignUp";
-import SignUpPage from "./pages/Patients/SignUpPage";
-import Documents from "./components/SignUp/Patient/Documents/PrivacyPolicy";
+// import SignUpPage from "./pages/Patients/SignUpPage";
+// import Documents from "./components/SignUp/Patient/Documents/PrivacyPolicy";
 import PDocuments from "./components/SignUp/Patient/Documents/PrivacyPolicy";
+import TDocuments from "./components/SignUp/Patient/Documents/TermsOfUse";
 
 
 export default function App(){
