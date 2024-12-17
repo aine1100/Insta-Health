@@ -118,10 +118,10 @@ import Market from "./pages/Market";
 // };
 
 // export default App;
-// import Home from "./pages/home"
-// import About from "./pages/about"
-// import Service from "./pages/service"
-// import Packages from "./pages/package"
+import Home from "./pages/home"
+import About from "./pages/about"
+import Service from "./pages/service"
+import Packages from "./pages/package"
 import Cart from "./pages/Cart"
 import Payment from "./pages/Payment";
 import ProductCard from "./pages/SingleProduct";
@@ -130,7 +130,7 @@ import ProductCard from "./pages/SingleProduct";
 export default function App(){
   return(
     <>
-    {/* <Home/> */}
+    <Home/>
     {/* <About/> */}
     {/* <AboutUs/> */}
     {/* <Service/> */}
@@ -141,7 +141,7 @@ export default function App(){
     {/* <PaymentPage/> */}
     {/* <SingleProductPage/> */}
     {/* <Payment/> */}
-    <ProductCard/>
+    {/* <ProductCard/> */}
 
     </>
   )
