@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import SocialAuthButtons from "../../Patient/SocialAuthButtons";
 import TermsCheckbox from "./TermsCheckbox";
-import { validateEmail, validatePassword } from "../../../utils/";
+import { validateEmail, validatePassword } from "../../../utils/validation";
 
 
 const FormSection: React.FC = () => {
