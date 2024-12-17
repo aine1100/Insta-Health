@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import SocialAuthButtons from "../../Patient/SocialAuthButtons";
 import TermsCheckbox from "./TermsCheckbox";
+import { validateEmail, validatePassword } from "../../../util/validation";
 
 const FormSection: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
+
   const [registerAs, setRegisterAs] = useState("Doctor");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -29,15 +31,6 @@ const FormSection: React.FC = () => {
     }
   };
 
-  const validateEmail = (email: string) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
-  const validatePassword = (password: string) => {
-    return password.length >= 8;
-  };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     let valid = true;
@@ -56,16 +49,20 @@ const FormSection: React.FC = () => {
     setErrors(newErrors);
 
     if (valid) {
-      // Proceed with form submission
       console.log("Form submitted successfully");
     }
   };
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold text-blue-600 mb-4">Create an account</h2>
+      <h2 className="text-2xl font-semibold text-blue-600 mb-4">
+        Create an account
+      </h2>
       <p className="text-sm text-gray-500">
-        Already have an account? <a href="/login" className="text-blue-500">Log in</a>
+        Already have an account?{" "}
+        <a href="/login" className="text-blue-500">
+          Log in
+        </a>
       </p>
 
       {/* Registration Options */}
@@ -79,11 +76,11 @@ const FormSection: React.FC = () => {
               value="Doctor"
               checked={registerAs === "Doctor"}
               onChange={() => handleRegisterAsChange("Doctor")}
-              className="text-blue-500 bg-blue-600 "
+              className="text-blue-500"
             />
             <span className="ml-2 text-gray-700">Doctor</span>
           </label>
-          
+
           <label className="flex items-center">
             <input
               type="radio"
@@ -128,12 +125,17 @@ const FormSection: React.FC = () => {
             {showPassword ? "🙈" : "👁️"}
           </span>
         </div>
-        {errors.password && <p className="text-xs text-red-500">{errors.password}</p>}
+        {errors.password && (
+          <p className="text-xs text-red-500">{errors.password}</p>
+        )}
 
         <SocialAuthButtons />
         <TermsCheckbox />
-        
-        <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 mt-4">
+
+        <button
+          type="submit"
+          className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 mt-4"
+        >
           Continue
         </button>
       </form>

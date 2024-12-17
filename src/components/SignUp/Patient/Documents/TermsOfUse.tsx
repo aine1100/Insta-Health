@@ -54,7 +54,7 @@ We may modify these Terms of Use at any time. Your continued use of the platform
 For any questions regarding these Terms of Use, please contact us at support@instahealth.com.
 `;
 
-const Documents: React.FC = () => {
+const TDocuments: React.FC = () => {
   const renderMarkdown = (markdown: string) => {
     const lines = markdown.split('\n');
     return lines.map((line, index) => {
