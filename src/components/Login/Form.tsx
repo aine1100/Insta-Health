@@ -12,7 +12,7 @@ const Form = () => {
                     <label htmlFor="password" className="mb-2  text-gray-700">Password</label>
                     <input type="password" placeholder='Password' className="mb-4 p-2 border rounded-md bg-white " />
                     <div className="mb-4 text-right">
-                        <a href="/reset-password" className="text-red-700 hover:underline">Forget your password?</a>
+                        <a href="/reset-password" className="text-red-700 hover:underline">Forgot your password?</a>
                     </div>
                     <button className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 mt-4">
                         Log In

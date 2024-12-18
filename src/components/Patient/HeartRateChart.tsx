@@ -33,10 +33,10 @@ const HeartRateChart: FC = () => {
         beginAtZero: true,
       },
     },
-  };
+  };text-blue-600
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-6">
+    <div className="bg-white w-[80%] h-[75%] shadow-md rounded-lg p-6">
       <h3 className="text-lg font-semibold mb-4">Heart Rate</h3>
       <Bar data={data} options={options} />
     </div>
