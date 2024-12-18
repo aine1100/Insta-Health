@@ -23,7 +23,7 @@ const Header: FC<HeaderProps> = ({ title }) => {
         <FiBell className="text-gray-600 text-xl mx-6" />
         <FiSettings className="text-gray-600 text-xl mx-6" />
         <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-300">
-          <img src="doctor-profile.jpg" alt="Profile" className="w-full h-full object-cover" />
+          <img src="/patient.jpg" alt="Profile" className="w-full h-full object-cover" />
         </div>
       </div>
     </header>

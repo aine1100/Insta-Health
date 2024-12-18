@@ -37,7 +37,7 @@ export default function DoctorTable() {
     const actionBodyTemplate = (doctor) => {
         return (
             <Tag
-                value={<Link to={`/doctor/${doctor.id}`} className="text-white">View More</Link>}  // Link updated with dynamic URL
+                value={<a href={`/admin/doctor/${doctor.id}`} className="text-white">View More</a>}  // Link updated with dynamic URL
                 className="p-2 text-white rounded-md text-xs font-semibold"
             />
         );
