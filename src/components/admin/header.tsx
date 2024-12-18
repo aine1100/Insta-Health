@@ -7,7 +7,7 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = ({ title }) => {
   return (
-    <header className="flex justify-between items-center px-6 py-3 w-[82rem] bg-white shadow-md sticky top-0">
+    <header className="flex justify-between items-center px-6 py-3 w-[80rem] bg-white shadow-md sticky top-0">
       <div>
         <h1 className="text-gray-600 text-lg">Pages / {title}</h1>
       </div>
