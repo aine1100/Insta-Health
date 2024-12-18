@@ -3,7 +3,7 @@ import Home from "./pages/home"
 import About from "./pages/about"
 import Service from "./pages/service"
 import Packages from "./pages/package"
-import Cart from "./pages/Cart"
+import Cart from "./pages/Patients/Cart"
 import Payment from "./pages/Payment";
 import ProductCard from "./pages/SingleProduct";
 import ContactPage from "./pages/Contact";
@@ -18,6 +18,9 @@ import SignUp from "./pages/Patients/SignUp";
 // import Documents from "./components/SignUp/Patient/Documents/PrivacyPolicy";
 import PDocuments from "./components/SignUp/Patient/Documents/PrivacyPolicy";
 import TDocuments from "./components/SignUp/Patient/Documents/TermsOfUse";
+import AdminDashboard from "./pages/admin/admin";
+import DoctorPage from "./pages/admin/doctors";
+import SingleDoctorPage from "./pages/admin/SingleDoctor";
 
 
 export default function App(){
@@ -44,6 +47,9 @@ export default function App(){
         <Route path="/patient/payments" element={<PaymentsPage />} />
         <Route path="/privacy" element={<PDocuments />} />
         <Route path="/terms" element={<TDocuments />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/doctors" element={<DoctorPage/>} />
+        <Route path="/admin/doctor/:id" element={<SingleDoctorPage/>}/>
 
       </Routes>
     </Router>
