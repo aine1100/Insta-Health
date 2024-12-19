@@ -14,7 +14,7 @@ const TABS = [
   { label: 'Dashboard', icon: FiGrid, href: 'dashboard' },
   { label: 'Doctors List', icon: FiList, href: 'doctors' },
   { label: 'Appointments', icon: FiCalendar, href: 'appointments' },
-  { label: 'Messages', icon: FiMessageCircle, href: '#' },
+  { label: 'Messages', icon: FiMessageCircle, href: 'messages' },
   { label: 'Payments', icon: FiCreditCard, href: 'payments' },
   { label: 'Consultations', icon: FiCheckCircle, href: '#' },
   { label: 'Profile', icon: FiUser, href: '#' },

@@ -33,7 +33,7 @@ const HeartRateChart: FC = () => {
         beginAtZero: true,
       },
     },
-  };text-blue-600
+  };
 
   return (
     <div className="bg-white w-[80%] h-[75%] shadow-md rounded-lg p-6">

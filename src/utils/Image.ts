@@ -1,0 +1,1 @@
+export const profile = "https://via.placeholder.com/40";

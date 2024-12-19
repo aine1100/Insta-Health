@@ -21,6 +21,7 @@ import TDocuments from "./components/SignUp/Patient/Documents/TermsOfUse";
 import AdminDashboard from "./pages/admin/admin";
 import DoctorPage from "./pages/admin/doctors";
 import SingleDoctorPage from "./pages/admin/SingleDoctor";
+import Messages from "./pages/Patients/Messages";
 
 
 export default function App(){
@@ -45,6 +46,7 @@ export default function App(){
         <Route path="/patient/dashboard" element={<Dashboard/>} />
         <Route path="/patient/appointments" element={<AppointmentsPage />} />
         <Route path="/patient/payments" element={<PaymentsPage />} />
+        <Route path="/patient/messages" element={<Messages />} />
         <Route path="/privacy" element={<PDocuments />} />
         <Route path="/terms" element={<TDocuments />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />

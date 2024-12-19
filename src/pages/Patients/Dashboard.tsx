@@ -28,33 +28,33 @@ const Dashboard: FC = () => {
       />
       <div className="flex-1">
         <Header title={"Dashboard"} />
-        <div>
-        <div className="grid grid-cols-2 p-6 gap-6 mt-8">
-          <UserInfoCard user={user} />
-          <div className="flex flex-col items-center justify-center space-y-8">
-            <div className="flex justify-center space-x-[35%]">
-              <div className="text-center ">
-                <h2 className="text-[#808080] text-[1.3rem] font-bold whitespace-nowrap">
-                  General Health
-                </h2>
-                <Status />
+          <div className="flex">
+            <div className="grid w-[58rem] grid-cols-2 p-6 gap-6 mt-8">
+              <UserInfoCard user={user} />
+              <div className="flex flex-col items-center justify-center space-y-8">
+                <div className="flex justify-center space-x-[35%]">
+                  <div className="text-center ">
+                    <h2 className="text-[#808080] text-[1.3rem] font-bold whitespace-nowrap">
+                      General Health
+                    </h2>
+                    <Status />
+                  </div>
+                  <div className="text-center ">
+                    <h2 className="text-[#808080] text-[1.3rem] font-bold whitespace-nowrap">
+                      Water Balance
+                    </h2>
+                    <Status />
+                  </div>
+                </div>
+                <HeartRateChart />
               </div>
-              <div className="text-center ">
-                <h2 className="text-[#808080] text-[1.3rem] font-bold whitespace-nowrap">
-                  Water Balance
-                </h2>
-                <Status />
-              </div>
+              <AppointmentsCard />
+              <HealthConditionChart />
             </div>
-            <HeartRateChart />
+            <div>
+              <MyAppointments />
+            </div>
           </div>
-          <AppointmentsCard />
-          <HealthConditionChart />
-        </div>
-        <div>
-          <MyAppointments />
-        </div>
-        </div>
       </div>
     </div>
   );
